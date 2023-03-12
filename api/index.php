@@ -1,6 +1,5 @@
 <?php 
-//v0.1 🤔
-$path = $_SERVER['DOCUMENT_ROOT'].'/album';//获取相册在主机中的绝对路径
+$path = $_SERVER['DOCUMENT_ROOT'].'/album';
 $files=array();
 if ($handle=opendir("$path")) {
 while(false !== ($file = readdir($handle))) {
