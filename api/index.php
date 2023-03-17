@@ -13,6 +13,6 @@ if ($handle=opendir("$path")) {
 	}
 	closedir($handle);
 	$url="./img/$files[$random]";
-  	header('Location: $url');
+  	header("Location: $url");
 }
 ?>
