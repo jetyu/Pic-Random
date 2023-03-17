@@ -10,8 +10,7 @@ if ($handle=opendir("$path")) {
 		$random=mt_rand(0,count($files));
 	}
 	closedir($handle);
-	$url="./album/$files[$random]";
-	header("Location: $url");
+	
 	
 }
 ?>
