@@ -1,6 +1,6 @@
 <?php 
 
-$path = $_SERVER['DOCUMENT_ROOT'].'/album';
+$path = $_SERVER['DOCUMENT_ROOT'].'/img';
 
 $files=array();
 if ($handle=opendir("$path")) {
