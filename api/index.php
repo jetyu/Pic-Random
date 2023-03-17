@@ -14,6 +14,6 @@ if ($handle=opendir("$path")) {
 	closedir($handle);
 	$url="./img/$files[$random]";
 	header('HTTP/1.1 301 Moved Permanently'); //无此句则是302
-  header('Location: http://picture.jetyu.me');
+  header('Location: $url');
 }
 ?>
