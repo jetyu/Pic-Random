@@ -1,7 +1,6 @@
 <? php
 
-$path = $_SERVER['DOCUMENT_ROOT'].
-'/img';
+$path = $_SERVER['DOCUMENT_ROOT'].'/img';
 $files = array();
 if ($handle = opendir("$path")) {
     while (false !== ($file = readdir($handle))) {
@@ -13,4 +12,5 @@ if ($handle = opendir("$path")) {
     closedir($handle);
     $url = "./img/$files[$random]";
     header("Location: $url");
-} ?>
+} 
+?>
